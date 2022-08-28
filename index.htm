@@ -1,7 +1,6 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
 <canvas width='1440' height='1824' style="background:black;"></canvas><script>
-
-  
+ 
 const c = document.querySelector('canvas').getContext('2d');
 c.fillStyle = "black"; c.fillRect(0,0,1440,1824);//720x912
 
@@ -16,19 +15,18 @@ for (let i = 0; i < lines.length; i++) {
 }
 
  image1 = new Image();
- image1.src = "./Merdeka_1957_tunku_abdul_rahman.jpg";
+ image1.src = "https://upload.wikimedia.org/wikipedia/commons/6/69/Merdeka_1957_tunku_abdul_rahman.jpg";
  image1.onload = function(){
   c.globalAlpha = 0.5;
   c.drawImage(image1,0,0,362*7,272*7);
  }
 
  image2 = new Image();
- image2.src = "./dfm.png";
+ image2.src = "https://dragonforce.io/img/logo/dfm.png";
  image2.onload = function(){
   c.globalAlpha = 0.15;
   c.drawImage(image2,10,200,1440,1440);
  }
-
 
  image3 = new Image();
  image3.src = "./pngwing.com.png";
@@ -36,9 +34,6 @@ for (let i = 0; i < lines.length; i++) {
   c.globalAlpha = 0.9;
   c.drawImage(image3,30,1050);
  }
-
-
-
 
 //
 c.font = "70px 'courier 10 pitch'";
@@ -56,8 +51,6 @@ c.textAlign = 'left'; c.fillText("نڬاراكو مليسيا", 750, 990);
 c.textAlign = 'left'; c.fillText("..", 750, 1784);
 c.textAlign = 'right'; c.fillText("RM15", 1410, 1784);
 
-
-
 c.font ='50px "courier 10 pitch"'; c.fillStyle = 'black';
 c.textAlign = 'center';
 const txtb = 'كڤرچايأن كڤد توهن\nكستياان كڤد راج دان نڬارا\nكلوهورن ڤرلمباڬان\nكدولتن اوندڠ-اوندڠ\nكسوڤنن دان كسوسيلاان';
@@ -67,14 +60,12 @@ for (let i = 0; i < linesb.length; i++) {
   c.fillText(linesb[i], xb, yb + (i * lineheightb));
 }
 
-
- image4 = new Image();
- image4.src = "./qrcode.png";
- image4.onload = function(){
+image4 = new Image();
+image4.src = "./qrcode.png";
+image4.onload = function(){
   c.globalAlpha = 0.8;
   c.drawImage(image4,35,1590,200,200);
  }
-
 
 c.font ='22px "courier 10 pitch"'; c.fillStyle = 'black';
 c.textAlign = 'left';
@@ -84,7 +75,6 @@ const lineheight4 = 30; const lines4 = txt4.split('\n');
 for (let i = 0; i < lines4.length; i++) {
   c.fillText(lines4[i], x4, y4 + (i * lineheight4));
 }
-
 
 // NO EDIT
 //
