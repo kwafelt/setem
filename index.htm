@@ -1,0 +1,130 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<canvas width='1440' height='1824' style="background:black;"></canvas><script>
+
+  
+const c = document.querySelector('canvas').getContext('2d');
+c.fillStyle = "black"; c.fillRect(0,0,1440,1824);//720x912
+
+c.fillStyle = "rgb(245,245,245)"; c.fillRect(10,10,1425,1804);//720x912
+c.font ='140px "courier 10 pitch"'; c.fillStyle = 'black';
+c.textAlign = 'center';
+const txt = 'كلوارڬ\nمليسيا\nتڬوه\nبرسام';
+const x = 370; const y = 280;
+const lineheight = 160; const lines = txt.split('\n');
+for (let i = 0; i < lines.length; i++) {
+  c.fillText(lines[i], x, y + (i * lineheight));
+}
+
+ image1 = new Image();
+ image1.src = "./Merdeka_1957_tunku_abdul_rahman.jpg";
+ image1.onload = function(){
+  c.globalAlpha = 0.5;
+  c.drawImage(image1,0,0,362*7,272*7);
+ }
+
+ image2 = new Image();
+ image2.src = "./dfm.png";
+ image2.onload = function(){
+  c.globalAlpha = 0.15;
+  c.drawImage(image2,10,200,1440,1440);
+ }
+
+
+ image3 = new Image();
+ image3.src = "./pngwing.com.png";
+ image3.onload = function(){
+  c.globalAlpha = 0.9;
+  c.drawImage(image3,30,1050);
+ }
+
+
+
+
+//
+c.font = "70px 'courier 10 pitch'";
+c.textAlign = 'left'; c.fillText("Malaysia", 35, 95);
+c.textAlign = 'right'; c.fillText("RM5", 700, 95);
+c.textAlign = 'left'; c.fillText("مرديك", 750, 95);
+c.textAlign = 'right'; c.fillText("RM10", 1410, 95);
+c.textAlign = 'left'; c.fillText("Merdeka 65", 750, 880);
+c.textAlign = 'left'; c.fillText("2022", 35, 880);
+c.textAlign = 'right'; c.fillText("31st", 700, 880);
+c.textAlign = 'left'; c.fillText("August", 35, 990);
+c.textAlign = 'right'; c.fillText("1957", 700, 990);
+c.textAlign = 'right'; c.fillText("RM10", 700, 1784);
+c.textAlign = 'left'; c.fillText("نڬاراكو مليسيا", 750, 990);
+c.textAlign = 'left'; c.fillText("..", 750, 1784);
+c.textAlign = 'right'; c.fillText("RM15", 1410, 1784);
+
+
+
+c.font ='50px "courier 10 pitch"'; c.fillStyle = 'black';
+c.textAlign = 'center';
+const txtb = 'كڤرچايأن كڤد توهن\nكستياان كڤد راج دان نڬارا\nكلوهورن ڤرلمباڬان\nكدولتن اوندڠ-اوندڠ\nكسوڤنن دان كسوسيلاان';
+const xb = 1090; const yb = 250;
+const lineheightb = 110; const linesb = txtb.split('\n');
+for (let i = 0; i < linesb.length; i++) {
+  c.fillText(linesb[i], xb, yb + (i * lineheightb));
+}
+
+
+ image4 = new Image();
+ image4.src = "./qrcode.png";
+ image4.onload = function(){
+  c.globalAlpha = 0.8;
+  c.drawImage(image4,35,1590,200,200);
+ }
+
+
+c.font ='22px "courier 10 pitch"'; c.fillStyle = 'black';
+c.textAlign = 'left';
+const txt4 = 'ikatan bangsa merdeka\n..\n\ndi atas astaka gemilang, kita berdiri,\nmengenang hari-hari semalam menabur bakti,\nmasih mengalir warisan dalam diri ini,\ndarah-darah pejuang mengikat janji.\n\nbukan mimpi suara bertempik, jerit bergema,\nmelatari semboyan setiap detik menghapus noda.\nperjuangan ini terlalu berharga buat kita.\n\nkaki melangkah seiring bergandingan bahu\ntak kenal lelah berpadu tekad nan-satu.\nsiapa berani menghalangi semangat jitu?\n\nbermandi peluh bercampur debu semalam,\nasalkan tidak berulang sejarah kelam.\n..\n\nogos 2022\nkwafelt'
+const x4 = 770; const y4 = 1100;
+const lineheight4 = 30; const lines4 = txt4.split('\n');
+for (let i = 0; i < lines4.length; i++) {
+  c.fillText(lines4[i], x4, y4 + (i * lineheight4));
+}
+
+
+// NO EDIT
+//
+var canvas = document.querySelector("canvas");
+var ctx = canvas.getContext("2d");
+//
+ctx.strokeStyle = 'black';
+ctx.lineWidth = '15';
+ctx.lineCap = 'round';
+ctx.setLineDash([1, 20]);
+//
+ctx.beginPath();
+ctx.moveTo(10, 10);
+ctx.lineTo(1420, 10);
+ctx.stroke();
+//
+ctx.beginPath();
+ctx.moveTo(10, 914);
+ctx.lineTo(1420, 914);
+ctx.stroke();
+//
+ctx.beginPath();
+ctx.moveTo(10, 1814);
+ctx.lineTo(1430, 1814);
+ctx.stroke();
+//
+ctx.beginPath();
+ctx.moveTo(10, 10);
+ctx.lineTo(10, 1820);
+ctx.stroke();
+//
+ctx.beginPath();
+ctx.moveTo(724, 10);
+ctx.lineTo(724, 1824);
+ctx.stroke();
+//
+ctx.beginPath();
+ctx.moveTo(1434, 10);
+ctx.lineTo(1434, 1804);
+ctx.stroke();
+//
+
+</script></body></html>
